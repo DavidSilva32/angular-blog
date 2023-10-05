@@ -1,0 +1,24 @@
+@import "../../../mixins"
+    
+.container__small-card
+    border-bottom: 2px solid white
+    width: 100%
+    padding: 1rem
+    gap: 1rem
+
+    @include tablet-and-higher
+        @include container($justify: space-between, $align: flex-start)
+        height: 9rem
+
+    img
+        min-width: 200px
+        width: 100%
+        
+        @include tablet-and-higher
+            width: 40%
+            min-height: 7rem
+
+    h1
+        @include tablet-and-higher
+            width: 60%
+            align-self: center

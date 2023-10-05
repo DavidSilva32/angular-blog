@@ -1,0 +1,31 @@
+@import "../../../mixins"
+
+header
+    padding-top: 1rem
+    
+
+.articles
+    @include container($justify: center, $align: normal)  
+    flex-direction: column
+    gap: 1rem
+
+    @include tablet-and-higher
+        max-width: 1000px
+        margin: 0 auto
+        padding: 0 1rem
+        flex-direction: row
+
+    &__main 
+        @include tablet-and-higher  
+            width: 55% 
+            max-height: 500px
+
+    &__others        
+        @include container($justify: space-between, $align: center)
+        flex-direction: column
+        gap: 1rem
+
+        @include tablet-and-higher  
+            width: 45%
+            max-height: 500px
+            flex-direction: column
