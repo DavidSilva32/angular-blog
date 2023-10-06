@@ -1,13 +1,14 @@
 @import "../../../mixins"
+@import "../../../variables"
     
 .container__menu-title
 
     h1
         @include container(center, center)
+        border: 2px solid $primary-color
+        border-left: 0
+        border-right: 0
         margin: 1rem 0
         font-size: 2.75rem
         @include tablet-and-higher
             font-size: 5.5rem
-
-    hr
-        margin: 1rem 0

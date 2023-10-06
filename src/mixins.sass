@@ -3,6 +3,9 @@
     justify-content: $justify
     align-items: $align
 
+@mixin border-bottom($width, $style, $color)
+    border-bottom: $width $style $color
+
 @mixin tablet-and-higher
     @media screen and (min-width: 768px)
         @content

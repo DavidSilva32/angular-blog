@@ -1,4 +1,6 @@
 <section class="container__small-card">
-    <img src={{photoCover}} alt={{alt}}>
-    <h1><a href="#">{{cardTitle}}</a></h1>
+  <img src="{{ photoCover }}" alt="{{ alt }}" />
+  <h1>
+    <a [routerLink]="['content', id]">{{ cardTitle }}</a>
+  </h1>
 </section>

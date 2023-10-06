@@ -1,9 +1,9 @@
 <section class="container__big-card">
   <img src="{{ photoCover }}" alt="Main Image" />
   <h2>
-    <a href="#">{{ cardTitle }}</a>
+    <a [routerLink]="['content', id]">{{ cardTitle }}</a>
   </h2>
   <p>
-    <a href="#">{{ cardDescription }}</a>
+    <a [routerLink]="['content', id]">{{ cardDescription }}</a>
   </p>
 </section>

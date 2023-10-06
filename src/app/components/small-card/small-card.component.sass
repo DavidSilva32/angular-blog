@@ -1,7 +1,9 @@
 @import "../../../mixins"
+@import "../../../variables"
     
 .container__small-card
-    border-bottom: 2px solid white
+    @include border-bottom($width: 2px, $style: solid, $color: $primary-color)
+    
     width: 100%
     padding: 1rem
     gap: 1rem

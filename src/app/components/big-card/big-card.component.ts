@@ -13,6 +13,8 @@ export class BigCardComponent implements OnInit {
   cardTitle: string = "New Iron Man Announced"
   @Input()
   cardDescription: string = "Marvel studios announced new Iron Man movie"
+  @Input()
+  id: string = "0"
 
   constructor() { }
 

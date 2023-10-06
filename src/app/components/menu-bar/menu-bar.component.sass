@@ -1,10 +1,21 @@
 @import "../../../mixins"
+@import "../../../variables"
     
 .container__menu-bar    
     ul
         @include container($justify: center, $align: center)
         gap: 1rem
+        background: $primary-color
+
+        li
+            a
+                background: $primary-color
+                color: $secondary-color
+
 
         li:hover
             @include tablet-and-higher
                 cursor: pointer
+                text-decoration: underline
+                color: $secondary-color
+    

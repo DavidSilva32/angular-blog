@@ -12,6 +12,8 @@ export class SmallCardComponent implements OnInit {
   cardTitle: string = "Series Marvel"
   @Input()
   alt: string = "Aside Image"
+  @Input()
+  id: string = "0"
 
   constructor() { }
 
