@@ -1,7 +1,9 @@
-<section class="container__content">
+<main class="container__content">
+  <section class="title">
+    <h1>{{ contentTitle }}</h1>
+    <a [routerLink]="['']"> << Back</a>
+  </section>
   <img src="{{ photoCover }}" alt="image" />
-  <h1>{{ contentTitle }}</h1>
-  <a [routerLink]="['']"> << Back</a>
   <p>{{ contentDescription }}</p>
-</section>
+</main>
 

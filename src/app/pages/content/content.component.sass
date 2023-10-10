@@ -2,21 +2,30 @@
 @import "../../../variables"
     
 .container__content
-    height: 100vh
-    margin-top: 1rem
+    margin: 0 auto
+    padding: 1rem
+    height: 100%
+    min-height: 100vh
+
+    @include tablet-and-higher
+        width: 70%
     
     @include container($justify: normal, $align: center)
     flex-direction: column
     gap: 1rem
 
+    .title
+       @include container($justify: space-between, $align: center)
+       width: 100% 
+
+       a
+        min-width: 60px
+
     img
-        width: 500px
-        height: 300px
+        width: 100%
         border: 5px solid #868686
         border-radius: .5rem
 
-    h1
-        @include border-bottom($width: 2px, $style: solid, $color: $primary-color)    
-            
+
     p
         color: $text-color
